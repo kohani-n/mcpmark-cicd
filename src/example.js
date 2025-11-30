@@ -1,10 +1,10 @@
-// Intentional linting violations
-const unused = "test";
+// Fixed linting violations
+const used = 'test';
 
-console.log("Hello world")
-
-function bad() {
-  let x = 1
-  let y = "double quotes"
-  return x + y
+function good() {
+  let x = 1;
+  let y = 'single quotes';
+  return x + y + used;
 }
+
+module.exports = { good };
